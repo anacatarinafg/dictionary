@@ -6,7 +6,7 @@
     --ff-black-color: #141414;
 
     --ff-white-color: #fff;
-    --bg-black-color: #141414;
+    --bg-black-color: #001aff;
 }
 
 *,
@@ -170,7 +170,9 @@ body.darkMode .search {
     text-transform: lowercase;
 }
 
-.search__input:placeholder-shown {}
+body.darkMode .search__input::placeholder {
+    color: var(--ff-white-color);
+  }
 
 .search__input::-webkit-search-cancel-button {
     display: none;
