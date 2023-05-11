@@ -55,7 +55,7 @@ searchInput.addEventListener("keyup", e => {
     }
 })
 
-
+// Building my dictionary
 function dictionary(result, word) {
     if (!result.word) {
         wordName.innerHTML = `Can't find the meaning of ${word}.`;
