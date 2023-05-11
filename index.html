@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav class="navbar">
-            <p class="navbar__logo">the dictionary</p>
+            <p class="navbar__logo">the english dictionary</p>
             <img src="./assets/android-chrome-192x192.png" alt="ana-catarina-logo" class="navbar__image">
             <button type="button" class="navbar__button">
                 <span class="material-symbols-outlined navbar__toggle">
@@ -27,49 +27,12 @@
     <main>
         <section class="dictionary">
             <div class="dictionary__word">
-                <p class="word__name">Computer<span> [ kuhm-pyoo-ter ]</span></p>
-                <p class="word__meaning">
-                    <span class="material-symbols-outlined">
-                        trending_flat
-                        </span>
-                        {Meaning of the word}</p>
+                <p class="word__name"><span class="word__tag"></span></p>
+                <p class="word__meaning"></p>
             </div>
-            <div class="dictionary__meaning">
-                <div class="dictionary__synonyms">
-                    <h2 class="dictionary__title">Synonyms</h2>
-                    <ul class="dictionary__list">
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                    </ul>
-                </div>
-                <div class="dictionary__antonyms">
-                    <h2 class="dictionary__title">Antonyms</h2>
-                    <ul class="dictionary__list">
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                        <li class="dictionary__item">dinosaur</li>
-                    </ul>
-                </div>
-            </div>
-
         </section>
         <section class="search">
-            <input type="search" class="search__input" placeholder="write a word...">
+            <input type="search" class="search__input" id="search" placeholder="write a word...">
         </section>
     </main>
     <script src="./js/script.js"></script>

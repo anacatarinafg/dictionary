@@ -118,7 +118,7 @@ main {
 }
 
 .dictionary__word {
-    width: 100%;
+    width: 40%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -129,11 +129,13 @@ main {
     font-size: 52px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
 
 }
 
-.word__name span {
-    font-size: 16px;
+.word__tag {
+    font-size: 26px;
+    font-style: italic;
 }
 
 .word__meaning {
@@ -141,44 +143,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 10px;
-}
-
-.dictionary__meaning {
-    width: 60%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.dictionary__list {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    flex-wrap: wrap;
-}
-
-.dictionary__title {
-    font-weight: 400;
-    text-transform: lowercase;
-    border-bottom: 1px solid var(--ff-black-color);
-}
-
-body.darkMode .dictionary__title {
-    border-bottom-color: var(--ff-white-color);
-}
-
-.dictionary__item {
-    font-weight: 400;
-    text-transform: lowercase;
-}
-
-.dictionary__antonyms,
-.dictionary__synonyms {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    font-size: 22px;
 }
 
 
@@ -213,6 +178,14 @@ body.darkMode .search {
 
 
 @media (max-width: 768px) {
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        font-family: 'Bellefair', serif;
+        color: var(--ff-black-color);
+        transition: all 0.15s ease-in;
+    }
     .navbar__image {
         display: none;
     }
@@ -230,9 +203,6 @@ body.darkMode .search {
         width: 95%;
         height: auto;
         display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        gap: 5em;
     }
 
     .word__name {
@@ -240,20 +210,12 @@ body.darkMode .search {
         font-weight: 600;
         font-family: Arial, Helvetica, sans-serif;
     }
-
-    .dictionary__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        list-style: circle;
-    }
-
-    .dictionary__meaning {
+    .dictionary__word {
         width: 100%;
         display: flex;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: center;
         flex-direction: column;
-        gap: 30px;
     }
+
 }
