@@ -1,9 +1,11 @@
 const toggleTheme = document.querySelector(".navbar__button");
 const searchInput = document.getElementById("search");
+const searchContainer = document.querySelector(".search");
 const wordName = document.querySelector(".word__name");
 const wordTag = document.querySelector(".word__tag");
 const wordMeaning = document.querySelector(".word__meaning");
-
+const dictionaryWords = document.querySelector(".dictionary__word");
+console.log(dictionaryWords)
 
 
 // Add dark theme to the webpage
@@ -52,6 +54,10 @@ searchInput.addEventListener("keyup", e => {
     if (e.key === "Enter" && e.target.value) {
         fetchWordDefinition(e.target.value);
         e.target.value = ""; // Clean the input field after an search
+        searchContainer.classList.add('reveal__animation'); // Add the animation class to the input field
+        setTimeout(() => {
+            searchContainer.classList.remove('reveal__animation'); // Remove the animation class after the animation is complete
+        }, 1000);
     }
 })
 

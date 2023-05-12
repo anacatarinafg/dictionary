@@ -114,7 +114,6 @@ main {
     width: 95%;
     height: 75vh;
     display: flex;
-
 }
 
 .dictionary__word {
@@ -123,6 +122,7 @@ main {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
 }
 
 .word__name {
@@ -130,6 +130,7 @@ main {
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 30px;
+    
 
 }
 
@@ -157,6 +158,7 @@ main {
     margin-bottom: 20px;
     position: absolute;
     bottom: 0;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
 }
 
 body.darkMode .search {
@@ -169,10 +171,9 @@ body.darkMode .search {
     font-family: 'Archivo', sans-serif;
     text-transform: lowercase;
 }
-
 body.darkMode .search__input::placeholder {
     color: var(--ff-white-color);
-  }
+}
 
 .search__input::-webkit-search-cancel-button {
     display: none;
@@ -188,6 +189,7 @@ body.darkMode .search__input::placeholder {
         color: var(--ff-black-color);
         transition: all 0.15s ease-in;
     }
+
     .navbar__image {
         display: none;
     }
@@ -212,6 +214,7 @@ body.darkMode .search__input::placeholder {
         font-weight: 600;
         font-family: Arial, Helvetica, sans-serif;
     }
+
     .dictionary__word {
         width: 100%;
         display: flex;
@@ -220,4 +223,18 @@ body.darkMode .search__input::placeholder {
         flex-direction: column;
     }
 
+}
+
+
+@keyframes reveal {
+    0% {
+        transform: translate(0, 100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+.reveal__animation {
+    animation: reveal 1s forwards;
 }
