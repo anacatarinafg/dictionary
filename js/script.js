@@ -26,7 +26,7 @@ const fetchWordDefinition = async (word) => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '0962f988c6msh9c27cb183d39606p176220jsna3d294466adb',
+            'X-RapidAPI-Key': '2d2a256035mshbc33d2afca65513p1cf813jsn6574ad06d8fc',
             'X-RapidAPI-Host': 'dictionary-data-api.p.rapidapi.com'
         }
     };
