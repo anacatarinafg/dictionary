@@ -235,6 +235,3 @@ body.darkMode .search__input::placeholder {
         transform: translate(0, 0);
     }
 }
-.reveal__animation {
-    animation: reveal 1s forwards;
-}

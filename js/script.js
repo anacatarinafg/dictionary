@@ -54,10 +54,6 @@ searchInput.addEventListener("keyup", e => {
     if (e.key === "Enter" && e.target.value) {
         fetchWordDefinition(e.target.value);
         e.target.value = ""; // Clean the input field after an search
-        searchContainer.classList.add('reveal__animation'); // Add the animation class to the input field
-        setTimeout(() => {
-            searchContainer.classList.remove('reveal__animation'); // Remove the animation class after the animation is complete
-        }, 1000);
     }
 })
 
