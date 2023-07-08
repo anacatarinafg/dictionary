@@ -222,9 +222,7 @@ body.darkMode .search__input::placeholder {
         justify-content: center;
         flex-direction: column;
     }
-
 }
-
 
 @keyframes reveal {
     0% {
