@@ -210,9 +210,9 @@ body.darkMode .search__input::placeholder {
     }
 
     .word__name {
+        font-family: Arial, Helvetica;
         font-size: 32px;
         font-weight: 600;
-        font-family: Arial, Helvetica, sans-serif;
     }
 
     .dictionary__word {
