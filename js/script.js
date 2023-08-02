@@ -86,3 +86,6 @@ function dictionary(result, word) {
         wordMeaning.innerHTML = "";
     }
 }
+
+
+// THE API ISN'T WORKING!!!!
